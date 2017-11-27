@@ -1,0 +1,6 @@
+framework module HuBan {
+  umbrella header "HuBan.h"
+
+  export *
+  module * { export * }
+}

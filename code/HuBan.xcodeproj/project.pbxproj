@@ -1,0 +1,1178 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4558F0691F8BA3FE001E00E9 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4558F06A1F8BA3FE001E00E9 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				4558F06D1F8BA434001E00E9 /* [HB] Run Framework Script */,
+			);
+			dependencies = (
+				455993841F8CC3D80095BD2D /* PBXTargetDependency */,
+				4558F06F1F8BA546001E00E9 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4518621E1F8E54DE00FF4018 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 451862181F8E545A00FF4018 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451862201F8E54EA00FF4018 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 451862191F8E545A00FF4018 /* Reachability.m */; };
+		4531BE501F8B438900EDDC38 /* HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE4E1F8B438900EDDC38 /* HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4531BE7B1F8B462000EDDC38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4531BE7A1F8B462000EDDC38 /* UIKit.framework */; };
+		4531BE7D1F8B462700EDDC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4531BE7C1F8B462700EDDC38 /* Foundation.framework */; };
+		4531BE7F1F8B462E00EDDC38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4531BE7E1F8B462E00EDDC38 /* CoreGraphics.framework */; };
+		4558F0441F8B668F001E00E9 /* NSURL+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE5E1F8B44F200EDDC38 /* NSURL+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0451F8B668F001E00E9 /* NSUserDefaults+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE611F8B44F200EDDC38 /* NSUserDefaults+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0461F8B668F001E00E9 /* UIBarButtonItem+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE641F8B44F200EDDC38 /* UIBarButtonItem+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0471F8B668F001E00E9 /* HBBaseNavController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE691F8B44F300EDDC38 /* HBBaseNavController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0481F8B668F001E00E9 /* HBBaseTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE6C1F8B44F300EDDC38 /* HBBaseTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0491F8B668F001E00E9 /* HBBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE6F1F8B44F300EDDC38 /* HBBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F04A1F8B668F001E00E9 /* HBFixedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE721F8B44F300EDDC38 /* HBFixedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F04B1F8B668F001E00E9 /* HBImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE751F8B44F300EDDC38 /* HBImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F04C1F8B668F001E00E9 /* Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4531BE781F8B44F300EDDC38 /* Defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F04D1F8B66C7001E00E9 /* NSURL+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE5F1F8B44F200EDDC38 /* NSURL+HuBan.m */; };
+		4558F04E1F8B66C7001E00E9 /* NSUserDefaults+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE621F8B44F200EDDC38 /* NSUserDefaults+HuBan.m */; };
+		4558F04F1F8B66C7001E00E9 /* UIBarButtonItem+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE651F8B44F200EDDC38 /* UIBarButtonItem+HuBan.m */; };
+		4558F0501F8B66C7001E00E9 /* HBBaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE6A1F8B44F300EDDC38 /* HBBaseNavController.m */; };
+		4558F0511F8B66C7001E00E9 /* HBBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE6D1F8B44F300EDDC38 /* HBBaseTabBarController.m */; };
+		4558F0521F8B66C7001E00E9 /* HBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE701F8B44F300EDDC38 /* HBBaseViewController.m */; };
+		4558F0531F8B66C7001E00E9 /* HBFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE731F8B44F300EDDC38 /* HBFixedViewController.m */; };
+		4558F0541F8B66C7001E00E9 /* HBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4531BE761F8B44F300EDDC38 /* HBImagePickerController.m */; };
+		4558F0581F8B6E3D001E00E9 /* UINavigationBar+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4558F0561F8B6E3D001E00E9 /* UINavigationBar+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0591F8B6E3D001E00E9 /* UINavigationBar+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4558F0571F8B6E3D001E00E9 /* UINavigationBar+HuBan.m */; };
+		4558F0661F8B8FBC001E00E9 /* UIColor+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4558F0641F8B8FBC001E00E9 /* UIColor+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4558F0671F8B8FBC001E00E9 /* UIColor+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4558F0651F8B8FBC001E00E9 /* UIColor+HuBan.m */; };
+		455993861F8CC4D10095BD2D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455993851F8CC4D10095BD2D /* Media.xcassets */; };
+		4559938C1F8CD06C0095BD2D /* NSBundle+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4559938A1F8CD06C0095BD2D /* NSBundle+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4559938D1F8CD06C0095BD2D /* NSBundle+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4559938B1F8CD06C0095BD2D /* NSBundle+HuBan.m */; };
+		455C8F3E1FA313AF009D75B8 /* HBFormatManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 455C8F3C1FA313AF009D75B8 /* HBFormatManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		455C8F3F1FA313AF009D75B8 /* HBFormatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C8F3D1FA313AF009D75B8 /* HBFormatManager.m */; };
+		455C8F431FA31567009D75B8 /* NSDateFormatter+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 455C8F411FA31567009D75B8 /* NSDateFormatter+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		455C8F441FA31567009D75B8 /* NSDateFormatter+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C8F421FA31567009D75B8 /* NSDateFormatter+HuBan.m */; };
+		457935671FAFFC5B008E7952 /* GCDGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 457935631FAFFC5B008E7952 /* GCDGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457935681FAFFC5B008E7952 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 457935641FAFFC5B008E7952 /* GCDGroup.m */; };
+		457935691FAFFC5B008E7952 /* GCDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 457935651FAFFC5B008E7952 /* GCDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4579356A1FAFFC5B008E7952 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 457935661FAFFC5B008E7952 /* GCDQueue.m */; };
+		4579357D1FB05860008E7952 /* HBTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579357B1FB0585F008E7952 /* HBTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4579357E1FB05860008E7952 /* HBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579357C1FB0585F008E7952 /* HBTableViewController.m */; };
+		457935821FB05A05008E7952 /* UIViewController+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 457935801FB05A05008E7952 /* UIViewController+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457935831FB05A05008E7952 /* UIViewController+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 457935811FB05A05008E7952 /* UIViewController+HuBan.m */; };
+		459160101F94A44D0091C605 /* NSData+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4591600F1F94A4200091C605 /* NSData+HuBan.m */; };
+		459160111F94A4550091C605 /* NSData+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4591600E1F94A4200091C605 /* NSData+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4591601C1F94B5960091C605 /* HBBlackPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4591601A1F94B5960091C605 /* HBBlackPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4591601D1F94B5960091C605 /* HBBlackPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4591601B1F94B5960091C605 /* HBBlackPickerController.m */; };
+		459160201F94B5A30091C605 /* HBWhitePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4591601E1F94B5A30091C605 /* HBWhitePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459160211F94B5A30091C605 /* HBWhitePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4591601F1F94B5A30091C605 /* HBWhitePickerController.m */; };
+		459CBF6B1F8DFCFC0022B3A0 /* NSString+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 459CBF691F8DFCFC0022B3A0 /* NSString+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459CBF6C1F8DFCFC0022B3A0 /* NSString+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 459CBF6A1F8DFCFC0022B3A0 /* NSString+HuBan.m */; };
+		459CBF791F8E1BE90022B3A0 /* UIStoryboard+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 459CBF771F8E1BE90022B3A0 /* UIStoryboard+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459CBF7A1F8E1BE90022B3A0 /* UIStoryboard+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 459CBF781F8E1BE90022B3A0 /* UIStoryboard+HuBan.m */; };
+		45C4AAFA1F8C6CC2006802A2 /* UITextField+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C4AAF81F8C6CC2006802A2 /* UITextField+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C4AAFB1F8C6CC2006802A2 /* UITextField+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AAF91F8C6CC2006802A2 /* UITextField+HuBan.m */; };
+		45C4AAFE1F8C716E006802A2 /* HBTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C4AAFC1F8C716E006802A2 /* HBTouchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C4AAFF1F8C716E006802A2 /* HBTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AAFD1F8C716E006802A2 /* HBTouchView.m */; };
+		45C4AB041F8C7291006802A2 /* UIView+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C4AB021F8C7291006802A2 /* UIView+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C4AB051F8C7291006802A2 /* UIView+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AB031F8C7291006802A2 /* UIView+HuBan.m */; };
+		45C4AB0B1F8C7529006802A2 /* UIImage+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AB091F8C7529006802A2 /* UIImage+HuBan.m */; };
+		45C4AB0F1F8C7537006802A2 /* UIButton+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C4AB0D1F8C7537006802A2 /* UIButton+HuBan.m */; };
+		45C4AB101F8C7805006802A2 /* UIButton+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C4AB0C1F8C7537006802A2 /* UIButton+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C4AB111F8C7805006802A2 /* UIImage+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C4AB081F8C7529006802A2 /* UIImage+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E1E4AE1F90D22700F05E6B /* NSMutableDictionary+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E1E4AC1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E1E4AF1F90D23400F05E6B /* NSMutableDictionary+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E1E4AD1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.m */; };
+		45E6953F1F8EF45600C9F8AC /* UIApplication+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E6953D1F8EF45600C9F8AC /* UIApplication+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E695401F8EF45600C9F8AC /* UIApplication+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E6953E1F8EF45600C9F8AC /* UIApplication+HuBan.m */; };
+		45E695521F8F1A9000C9F8AC /* UINavigationItem+HuBan.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E695501F8F1A9000C9F8AC /* UINavigationItem+HuBan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E695531F8F1A9000C9F8AC /* UINavigationItem+HuBan.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E695511F8F1A9000C9F8AC /* UINavigationItem+HuBan.m */; };
+		45EB0E6E1F91A44B0047E396 /* HBFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45EB0E6C1F91A44B0047E396 /* HBFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45EB0E6F1F91A44B0047E396 /* HBFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EB0E6D1F91A44B0047E396 /* HBFileManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4558F06E1F8BA546001E00E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4531BE421F8B438900EDDC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4531BE4A1F8B438900EDDC38;
+			remoteInfo = HuBan;
+		};
+		455993801F8CBFBE0095BD2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4531BE421F8B438900EDDC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 455993781F8CBF760095BD2D;
+			remoteInfo = Bundle;
+		};
+		455993831F8CC3D80095BD2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4531BE421F8B438900EDDC38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 455993781F8CBF760095BD2D;
+			remoteInfo = Bundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1C5452C9A8B8F3F8F4D9D8 /* Pods-HuBan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuBan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuBan/Pods-HuBan.debug.xcconfig"; sourceTree = "<group>"; };
+		451862181F8E545A00FF4018 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		451862191F8E545A00FF4018 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4531BE4B1F8B438900EDDC38 /* HuBan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HuBan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4531BE4E1F8B438900EDDC38 /* HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HuBan.h; sourceTree = "<group>"; };
+		4531BE4F1F8B438900EDDC38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4531BE5E1F8B44F200EDDC38 /* NSURL+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+HuBan.h"; sourceTree = "<group>"; };
+		4531BE5F1F8B44F200EDDC38 /* NSURL+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+HuBan.m"; sourceTree = "<group>"; };
+		4531BE611F8B44F200EDDC38 /* NSUserDefaults+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+HuBan.h"; sourceTree = "<group>"; };
+		4531BE621F8B44F200EDDC38 /* NSUserDefaults+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+HuBan.m"; sourceTree = "<group>"; };
+		4531BE641F8B44F200EDDC38 /* UIBarButtonItem+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HuBan.h"; sourceTree = "<group>"; };
+		4531BE651F8B44F200EDDC38 /* UIBarButtonItem+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HuBan.m"; sourceTree = "<group>"; };
+		4531BE691F8B44F300EDDC38 /* HBBaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBBaseNavController.h; sourceTree = "<group>"; };
+		4531BE6A1F8B44F300EDDC38 /* HBBaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBBaseNavController.m; sourceTree = "<group>"; };
+		4531BE6C1F8B44F300EDDC38 /* HBBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBBaseTabBarController.h; sourceTree = "<group>"; };
+		4531BE6D1F8B44F300EDDC38 /* HBBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBBaseTabBarController.m; sourceTree = "<group>"; };
+		4531BE6F1F8B44F300EDDC38 /* HBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBBaseViewController.h; sourceTree = "<group>"; };
+		4531BE701F8B44F300EDDC38 /* HBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBBaseViewController.m; sourceTree = "<group>"; };
+		4531BE721F8B44F300EDDC38 /* HBFixedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBFixedViewController.h; sourceTree = "<group>"; };
+		4531BE731F8B44F300EDDC38 /* HBFixedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBFixedViewController.m; sourceTree = "<group>"; };
+		4531BE751F8B44F300EDDC38 /* HBImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBImagePickerController.h; sourceTree = "<group>"; };
+		4531BE761F8B44F300EDDC38 /* HBImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBImagePickerController.m; sourceTree = "<group>"; };
+		4531BE781F8B44F300EDDC38 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		4531BE7A1F8B462000EDDC38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4531BE7C1F8B462700EDDC38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4531BE7E1F8B462E00EDDC38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4558F0561F8B6E3D001E00E9 /* UINavigationBar+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HuBan.h"; sourceTree = "<group>"; };
+		4558F0571F8B6E3D001E00E9 /* UINavigationBar+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HuBan.m"; sourceTree = "<group>"; };
+		4558F0641F8B8FBC001E00E9 /* UIColor+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HuBan.h"; sourceTree = "<group>"; };
+		4558F0651F8B8FBC001E00E9 /* UIColor+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HuBan.m"; sourceTree = "<group>"; };
+		455993791F8CBF760095BD2D /* Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4559937B1F8CBF760095BD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455993851F8CC4D10095BD2D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		4559938A1F8CD06C0095BD2D /* NSBundle+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+HuBan.h"; sourceTree = "<group>"; };
+		4559938B1F8CD06C0095BD2D /* NSBundle+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+HuBan.m"; sourceTree = "<group>"; };
+		455C8F3C1FA313AF009D75B8 /* HBFormatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBFormatManager.h; sourceTree = "<group>"; };
+		455C8F3D1FA313AF009D75B8 /* HBFormatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBFormatManager.m; sourceTree = "<group>"; };
+		455C8F411FA31567009D75B8 /* NSDateFormatter+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+HuBan.h"; sourceTree = "<group>"; };
+		455C8F421FA31567009D75B8 /* NSDateFormatter+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+HuBan.m"; sourceTree = "<group>"; };
+		457935631FAFFC5B008E7952 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		457935641FAFFC5B008E7952 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		457935651FAFFC5B008E7952 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		457935661FAFFC5B008E7952 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		4579357B1FB0585F008E7952 /* HBTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTableViewController.h; sourceTree = "<group>"; };
+		4579357C1FB0585F008E7952 /* HBTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTableViewController.m; sourceTree = "<group>"; };
+		457935801FB05A05008E7952 /* UIViewController+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HuBan.h"; sourceTree = "<group>"; };
+		457935811FB05A05008E7952 /* UIViewController+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HuBan.m"; sourceTree = "<group>"; };
+		4591600E1F94A4200091C605 /* NSData+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HuBan.h"; sourceTree = "<group>"; };
+		4591600F1F94A4200091C605 /* NSData+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HuBan.m"; sourceTree = "<group>"; };
+		4591601A1F94B5960091C605 /* HBBlackPickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBBlackPickerController.h; sourceTree = "<group>"; };
+		4591601B1F94B5960091C605 /* HBBlackPickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBBlackPickerController.m; sourceTree = "<group>"; };
+		4591601E1F94B5A30091C605 /* HBWhitePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBWhitePickerController.h; sourceTree = "<group>"; };
+		4591601F1F94B5A30091C605 /* HBWhitePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBWhitePickerController.m; sourceTree = "<group>"; };
+		459CBF691F8DFCFC0022B3A0 /* NSString+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HuBan.h"; sourceTree = "<group>"; };
+		459CBF6A1F8DFCFC0022B3A0 /* NSString+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HuBan.m"; sourceTree = "<group>"; };
+		459CBF771F8E1BE90022B3A0 /* UIStoryboard+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+HuBan.h"; sourceTree = "<group>"; };
+		459CBF781F8E1BE90022B3A0 /* UIStoryboard+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+HuBan.m"; sourceTree = "<group>"; };
+		45C4AAF81F8C6CC2006802A2 /* UITextField+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+HuBan.h"; sourceTree = "<group>"; };
+		45C4AAF91F8C6CC2006802A2 /* UITextField+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HuBan.m"; sourceTree = "<group>"; };
+		45C4AAFC1F8C716E006802A2 /* HBTouchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTouchView.h; sourceTree = "<group>"; };
+		45C4AAFD1F8C716E006802A2 /* HBTouchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTouchView.m; sourceTree = "<group>"; };
+		45C4AB021F8C7291006802A2 /* UIView+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HuBan.h"; sourceTree = "<group>"; };
+		45C4AB031F8C7291006802A2 /* UIView+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HuBan.m"; sourceTree = "<group>"; };
+		45C4AB081F8C7529006802A2 /* UIImage+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HuBan.h"; sourceTree = "<group>"; };
+		45C4AB091F8C7529006802A2 /* UIImage+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HuBan.m"; sourceTree = "<group>"; };
+		45C4AB0C1F8C7537006802A2 /* UIButton+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HuBan.h"; sourceTree = "<group>"; };
+		45C4AB0D1F8C7537006802A2 /* UIButton+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HuBan.m"; sourceTree = "<group>"; };
+		45E1E4AC1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+HuBan.h"; sourceTree = "<group>"; };
+		45E1E4AD1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+HuBan.m"; sourceTree = "<group>"; };
+		45E6953D1F8EF45600C9F8AC /* UIApplication+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+HuBan.h"; sourceTree = "<group>"; };
+		45E6953E1F8EF45600C9F8AC /* UIApplication+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+HuBan.m"; sourceTree = "<group>"; };
+		45E695501F8F1A9000C9F8AC /* UINavigationItem+HuBan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+HuBan.h"; sourceTree = "<group>"; };
+		45E695511F8F1A9000C9F8AC /* UINavigationItem+HuBan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+HuBan.m"; sourceTree = "<group>"; };
+		45EB0E6C1F91A44B0047E396 /* HBFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBFileManager.h; sourceTree = "<group>"; };
+		45EB0E6D1F91A44B0047E396 /* HBFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBFileManager.m; sourceTree = "<group>"; };
+		63E08C1B997A75C4DE46A8A5 /* libPods-HuBan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HuBan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43CECCC9908DEEB3B6D24D6 /* Pods-HuBan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuBan.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuBan/Pods-HuBan.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4531BE471F8B438900EDDC38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4531BE7B1F8B462000EDDC38 /* UIKit.framework in Frameworks */,
+				4531BE7D1F8B462700EDDC38 /* Foundation.framework in Frameworks */,
+				4531BE7F1F8B462E00EDDC38 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455993761F8CBF760095BD2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451862161F8E543A00FF4018 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				457935621FAFFC5B008E7952 /* GCDQueue */,
+				451862171F8E545A00FF4018 /* Reachability */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		451862171F8E545A00FF4018 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				451862181F8E545A00FF4018 /* Reachability.h */,
+				451862191F8E545A00FF4018 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		4531BE411F8B438900EDDC38 = {
+			isa = PBXGroup;
+			children = (
+				4531BE4D1F8B438900EDDC38 /* HuBan */,
+				4559937A1F8CBF760095BD2D /* Bundle */,
+				4531BE4C1F8B438900EDDC38 /* Products */,
+				4531BE791F8B462000EDDC38 /* Frameworks */,
+				994B0508C5014FEAEA2E8BE6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4531BE4C1F8B438900EDDC38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE4B1F8B438900EDDC38 /* HuBan.framework */,
+				455993791F8CBF760095BD2D /* Bundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4531BE4D1F8B438900EDDC38 /* HuBan */ = {
+			isa = PBXGroup;
+			children = (
+				451862161F8E543A00FF4018 /* Vendors */,
+				4531BE5C1F8B44F200EDDC38 /* Categorys */,
+				4531BE671F8B44F300EDDC38 /* Components */,
+				4531BE661F8B44F300EDDC38 /* Extension */,
+				4531BE5B1F8B44F200EDDC38 /* Managers */,
+				4531BE771F8B44F300EDDC38 /* Profiles */,
+				4531BE4E1F8B438900EDDC38 /* HuBan.h */,
+				4531BE4F1F8B438900EDDC38 /* Info.plist */,
+			);
+			path = HuBan;
+			sourceTree = "<group>";
+		};
+		4531BE5B1F8B44F200EDDC38 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				45EB0E6C1F91A44B0047E396 /* HBFileManager.h */,
+				45EB0E6D1F91A44B0047E396 /* HBFileManager.m */,
+				455C8F3C1FA313AF009D75B8 /* HBFormatManager.h */,
+				455C8F3D1FA313AF009D75B8 /* HBFormatManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4531BE5C1F8B44F200EDDC38 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				4579357F1FB059E7008E7952 /* UIViewController */,
+				455C8F401FA31554009D75B8 /* NSDateFormatter */,
+				4591600D1F94A4200091C605 /* NSData */,
+				45C4AB011F8C727E006802A2 /* UIView */,
+				4558F0631F8B8FAD001E00E9 /* UIColor */,
+				45C4AB061F8C751B006802A2 /* UIButton */,
+				45C4AAF71F8C6CA4006802A2 /* UITextField */,
+				45E1E4AB1F90D1AD00F05E6B /* NSMutableDictionary */,
+				45E6954F1F8F1A6D00C9F8AC /* UINavigationItem */,
+				45E6953C1F8EF44600C9F8AC /* UIApplication */,
+				459CBF721F8E1B350022B3A0 /* UIStoryboard */,
+				459CBF681F8DFCEE0022B3A0 /* NSString */,
+				455993891F8CD0520095BD2D /* NSBundle */,
+				45C4AB071F8C751B006802A2 /* UIImage */,
+				4531BE5D1F8B44F200EDDC38 /* NSURL */,
+				4531BE601F8B44F200EDDC38 /* NSUserDefaults */,
+				4531BE631F8B44F200EDDC38 /* UIBarButtonItem */,
+				4558F0551F8B6E31001E00E9 /* UINavigationBar */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		4531BE5D1F8B44F200EDDC38 /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE5E1F8B44F200EDDC38 /* NSURL+HuBan.h */,
+				4531BE5F1F8B44F200EDDC38 /* NSURL+HuBan.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
+		4531BE601F8B44F200EDDC38 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE611F8B44F200EDDC38 /* NSUserDefaults+HuBan.h */,
+				4531BE621F8B44F200EDDC38 /* NSUserDefaults+HuBan.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		4531BE631F8B44F200EDDC38 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE641F8B44F200EDDC38 /* UIBarButtonItem+HuBan.h */,
+				4531BE651F8B44F200EDDC38 /* UIBarButtonItem+HuBan.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		4531BE661F8B44F300EDDC38 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AB001F8C7173006802A2 /* HBTouchView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4531BE671F8B44F300EDDC38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4579357A1FB0584E008E7952 /* HBTableViewController */,
+				4531BE681F8B44F300EDDC38 /* HBBaseNavController */,
+				4531BE6B1F8B44F300EDDC38 /* HBBaseTabBarController */,
+				4531BE6E1F8B44F300EDDC38 /* HBBaseViewController */,
+				4531BE711F8B44F300EDDC38 /* HBFixedViewController */,
+				4531BE741F8B44F300EDDC38 /* HBImagePickerController */,
+				459160181F94B5850091C605 /* HBBlackPickerController */,
+				459160191F94B5850091C605 /* HBWhitePickerController */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4531BE681F8B44F300EDDC38 /* HBBaseNavController */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE691F8B44F300EDDC38 /* HBBaseNavController.h */,
+				4531BE6A1F8B44F300EDDC38 /* HBBaseNavController.m */,
+			);
+			path = HBBaseNavController;
+			sourceTree = "<group>";
+		};
+		4531BE6B1F8B44F300EDDC38 /* HBBaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE6C1F8B44F300EDDC38 /* HBBaseTabBarController.h */,
+				4531BE6D1F8B44F300EDDC38 /* HBBaseTabBarController.m */,
+			);
+			path = HBBaseTabBarController;
+			sourceTree = "<group>";
+		};
+		4531BE6E1F8B44F300EDDC38 /* HBBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE6F1F8B44F300EDDC38 /* HBBaseViewController.h */,
+				4531BE701F8B44F300EDDC38 /* HBBaseViewController.m */,
+			);
+			path = HBBaseViewController;
+			sourceTree = "<group>";
+		};
+		4531BE711F8B44F300EDDC38 /* HBFixedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE721F8B44F300EDDC38 /* HBFixedViewController.h */,
+				4531BE731F8B44F300EDDC38 /* HBFixedViewController.m */,
+			);
+			path = HBFixedViewController;
+			sourceTree = "<group>";
+		};
+		4531BE741F8B44F300EDDC38 /* HBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE751F8B44F300EDDC38 /* HBImagePickerController.h */,
+				4531BE761F8B44F300EDDC38 /* HBImagePickerController.m */,
+			);
+			path = HBImagePickerController;
+			sourceTree = "<group>";
+		};
+		4531BE771F8B44F300EDDC38 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE781F8B44F300EDDC38 /* Defines.h */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		4531BE791F8B462000EDDC38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4531BE7E1F8B462E00EDDC38 /* CoreGraphics.framework */,
+				4531BE7C1F8B462700EDDC38 /* Foundation.framework */,
+				4531BE7A1F8B462000EDDC38 /* UIKit.framework */,
+				63E08C1B997A75C4DE46A8A5 /* libPods-HuBan.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4558F0551F8B6E31001E00E9 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				4558F0561F8B6E3D001E00E9 /* UINavigationBar+HuBan.h */,
+				4558F0571F8B6E3D001E00E9 /* UINavigationBar+HuBan.m */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		4558F0631F8B8FAD001E00E9 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				4558F0641F8B8FBC001E00E9 /* UIColor+HuBan.h */,
+				4558F0651F8B8FBC001E00E9 /* UIColor+HuBan.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		4559937A1F8CBF760095BD2D /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				4559937B1F8CBF760095BD2D /* Info.plist */,
+				455993851F8CC4D10095BD2D /* Media.xcassets */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		455993891F8CD0520095BD2D /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				4559938A1F8CD06C0095BD2D /* NSBundle+HuBan.h */,
+				4559938B1F8CD06C0095BD2D /* NSBundle+HuBan.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		455C8F401FA31554009D75B8 /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				455C8F411FA31567009D75B8 /* NSDateFormatter+HuBan.h */,
+				455C8F421FA31567009D75B8 /* NSDateFormatter+HuBan.m */,
+			);
+			path = NSDateFormatter;
+			sourceTree = "<group>";
+		};
+		457935621FAFFC5B008E7952 /* GCDQueue */ = {
+			isa = PBXGroup;
+			children = (
+				457935631FAFFC5B008E7952 /* GCDGroup.h */,
+				457935641FAFFC5B008E7952 /* GCDGroup.m */,
+				457935651FAFFC5B008E7952 /* GCDQueue.h */,
+				457935661FAFFC5B008E7952 /* GCDQueue.m */,
+			);
+			path = GCDQueue;
+			sourceTree = "<group>";
+		};
+		4579357A1FB0584E008E7952 /* HBTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4579357B1FB0585F008E7952 /* HBTableViewController.h */,
+				4579357C1FB0585F008E7952 /* HBTableViewController.m */,
+			);
+			path = HBTableViewController;
+			sourceTree = "<group>";
+		};
+		4579357F1FB059E7008E7952 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				457935801FB05A05008E7952 /* UIViewController+HuBan.h */,
+				457935811FB05A05008E7952 /* UIViewController+HuBan.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		4591600D1F94A4200091C605 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				4591600E1F94A4200091C605 /* NSData+HuBan.h */,
+				4591600F1F94A4200091C605 /* NSData+HuBan.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		459160181F94B5850091C605 /* HBBlackPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4591601A1F94B5960091C605 /* HBBlackPickerController.h */,
+				4591601B1F94B5960091C605 /* HBBlackPickerController.m */,
+			);
+			path = HBBlackPickerController;
+			sourceTree = "<group>";
+		};
+		459160191F94B5850091C605 /* HBWhitePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4591601E1F94B5A30091C605 /* HBWhitePickerController.h */,
+				4591601F1F94B5A30091C605 /* HBWhitePickerController.m */,
+			);
+			path = HBWhitePickerController;
+			sourceTree = "<group>";
+		};
+		459CBF681F8DFCEE0022B3A0 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				459CBF691F8DFCFC0022B3A0 /* NSString+HuBan.h */,
+				459CBF6A1F8DFCFC0022B3A0 /* NSString+HuBan.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		459CBF721F8E1B350022B3A0 /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				459CBF771F8E1BE90022B3A0 /* UIStoryboard+HuBan.h */,
+				459CBF781F8E1BE90022B3A0 /* UIStoryboard+HuBan.m */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		45C4AAF71F8C6CA4006802A2 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AAF81F8C6CC2006802A2 /* UITextField+HuBan.h */,
+				45C4AAF91F8C6CC2006802A2 /* UITextField+HuBan.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		45C4AB001F8C7173006802A2 /* HBTouchView */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AAFC1F8C716E006802A2 /* HBTouchView.h */,
+				45C4AAFD1F8C716E006802A2 /* HBTouchView.m */,
+			);
+			name = HBTouchView;
+			sourceTree = "<group>";
+		};
+		45C4AB011F8C727E006802A2 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AB021F8C7291006802A2 /* UIView+HuBan.h */,
+				45C4AB031F8C7291006802A2 /* UIView+HuBan.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		45C4AB061F8C751B006802A2 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AB0C1F8C7537006802A2 /* UIButton+HuBan.h */,
+				45C4AB0D1F8C7537006802A2 /* UIButton+HuBan.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		45C4AB071F8C751B006802A2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				45C4AB081F8C7529006802A2 /* UIImage+HuBan.h */,
+				45C4AB091F8C7529006802A2 /* UIImage+HuBan.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		45E1E4AB1F90D1AD00F05E6B /* NSMutableDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				45E1E4AC1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.h */,
+				45E1E4AD1F90D1AD00F05E6B /* NSMutableDictionary+HuBan.m */,
+			);
+			path = NSMutableDictionary;
+			sourceTree = "<group>";
+		};
+		45E6953C1F8EF44600C9F8AC /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				45E6953D1F8EF45600C9F8AC /* UIApplication+HuBan.h */,
+				45E6953E1F8EF45600C9F8AC /* UIApplication+HuBan.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		45E6954F1F8F1A6D00C9F8AC /* UINavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				45E695501F8F1A9000C9F8AC /* UINavigationItem+HuBan.h */,
+				45E695511F8F1A9000C9F8AC /* UINavigationItem+HuBan.m */,
+			);
+			path = UINavigationItem;
+			sourceTree = "<group>";
+		};
+		994B0508C5014FEAEA2E8BE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C1C5452C9A8B8F3F8F4D9D8 /* Pods-HuBan.debug.xcconfig */,
+				C43CECCC9908DEEB3B6D24D6 /* Pods-HuBan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4531BE481F8B438900EDDC38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4531BE501F8B438900EDDC38 /* HuBan.h in Headers */,
+				4558F04C1F8B668F001E00E9 /* Defines.h in Headers */,
+				4558F0441F8B668F001E00E9 /* NSURL+HuBan.h in Headers */,
+				4559938C1F8CD06C0095BD2D /* NSBundle+HuBan.h in Headers */,
+				4558F0451F8B668F001E00E9 /* NSUserDefaults+HuBan.h in Headers */,
+				45C4AB101F8C7805006802A2 /* UIButton+HuBan.h in Headers */,
+				45C4AB041F8C7291006802A2 /* UIView+HuBan.h in Headers */,
+				45C4AB111F8C7805006802A2 /* UIImage+HuBan.h in Headers */,
+				459CBF6B1F8DFCFC0022B3A0 /* NSString+HuBan.h in Headers */,
+				4558F0661F8B8FBC001E00E9 /* UIColor+HuBan.h in Headers */,
+				459CBF791F8E1BE90022B3A0 /* UIStoryboard+HuBan.h in Headers */,
+				45C4AAFA1F8C6CC2006802A2 /* UITextField+HuBan.h in Headers */,
+				4558F0461F8B668F001E00E9 /* UIBarButtonItem+HuBan.h in Headers */,
+				45E6953F1F8EF45600C9F8AC /* UIApplication+HuBan.h in Headers */,
+				45E695521F8F1A9000C9F8AC /* UINavigationItem+HuBan.h in Headers */,
+				4558F0581F8B6E3D001E00E9 /* UINavigationBar+HuBan.h in Headers */,
+				45E1E4AE1F90D22700F05E6B /* NSMutableDictionary+HuBan.h in Headers */,
+				45C4AAFE1F8C716E006802A2 /* HBTouchView.h in Headers */,
+				4558F0471F8B668F001E00E9 /* HBBaseNavController.h in Headers */,
+				4558F0481F8B668F001E00E9 /* HBBaseTabBarController.h in Headers */,
+				4558F0491F8B668F001E00E9 /* HBBaseViewController.h in Headers */,
+				4591601C1F94B5960091C605 /* HBBlackPickerController.h in Headers */,
+				459160201F94B5A30091C605 /* HBWhitePickerController.h in Headers */,
+				4558F04A1F8B668F001E00E9 /* HBFixedViewController.h in Headers */,
+				4558F04B1F8B668F001E00E9 /* HBImagePickerController.h in Headers */,
+				45EB0E6E1F91A44B0047E396 /* HBFileManager.h in Headers */,
+				455C8F3E1FA313AF009D75B8 /* HBFormatManager.h in Headers */,
+				455C8F431FA31567009D75B8 /* NSDateFormatter+HuBan.h in Headers */,
+				457935671FAFFC5B008E7952 /* GCDGroup.h in Headers */,
+				457935691FAFFC5B008E7952 /* GCDQueue.h in Headers */,
+				457935821FB05A05008E7952 /* UIViewController+HuBan.h in Headers */,
+				4579357D1FB05860008E7952 /* HBTableViewController.h in Headers */,
+				4518621E1F8E54DE00FF4018 /* Reachability.h in Headers */,
+				459160111F94A4550091C605 /* NSData+HuBan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4531BE4A1F8B438900EDDC38 /* HuBan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4531BE531F8B438900EDDC38 /* Build configuration list for PBXNativeTarget "HuBan" */;
+			buildPhases = (
+				A31173A2BABD3061A55B48A7 /* [CP] Check Pods Manifest.lock */,
+				4531BE461F8B438900EDDC38 /* Sources */,
+				4531BE471F8B438900EDDC38 /* Frameworks */,
+				4531BE481F8B438900EDDC38 /* Headers */,
+				4531BE491F8B438900EDDC38 /* Resources */,
+				464BBC4A643B0402DC1419AB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				455993811F8CBFBE0095BD2D /* PBXTargetDependency */,
+			);
+			name = HuBan;
+			productName = HuBan;
+			productReference = 4531BE4B1F8B438900EDDC38 /* HuBan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		455993781F8CBF760095BD2D /* Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4559937C1F8CBF760095BD2D /* Build configuration list for PBXNativeTarget "Bundle" */;
+			buildPhases = (
+				455993751F8CBF760095BD2D /* Sources */,
+				455993761F8CBF760095BD2D /* Frameworks */,
+				455993771F8CBF760095BD2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bundle;
+			productName = Bundle;
+			productReference = 455993791F8CBF760095BD2D /* Bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4531BE421F8B438900EDDC38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "杭州互办网络科技有限公司";
+				TargetAttributes = {
+					4531BE4A1F8B438900EDDC38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					4558F0691F8BA3FE001E00E9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					455993781F8CBF760095BD2D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4531BE451F8B438900EDDC38 /* Build configuration list for PBXProject "HuBan" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4531BE411F8B438900EDDC38;
+			productRefGroup = 4531BE4C1F8B438900EDDC38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4531BE4A1F8B438900EDDC38 /* HuBan */,
+				455993781F8CBF760095BD2D /* Bundle */,
+				4558F0691F8BA3FE001E00E9 /* Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4531BE491F8B438900EDDC38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455993771F8CBF760095BD2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455993861F8CC4D10095BD2D /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4558F06D1F8BA434001E00E9 /* [HB] Run Framework Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[HB] Run Framework Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# 创建编译过程中存放的临时文件\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# 删除最终目标的文件保证文件都是新的\nrm -rf \"${PROJECT_DIR}/Bundle.bundle\"\nrm -rf \"${PROJECT_DIR}/${PROJECT_NAME}.framework\"\n\n# 编译真机和模拟器的的文件\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos VALID_ARCHS=\"x86_64 i386 armv7 armv7s arm64\" OTHER_CFLAGS=\"-fembed-bitcode\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator VALID_ARCHS=\"x86_64 i386 armv7 armv7s arm64\" OTHER_CFLAGS=\"-fembed-bitcode\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# 拷贝文件到合成的目录中\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# 合并真机和模拟器的文件\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n\n# 拷贝文件到最终的目录中\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n\n# 拷贝资源包到桌面\ncp -R  \"${BUILT_PRODUCTS_DIR}/Bundle.bundle\" \"${PROJECT_DIR}\"\n\n\n# 删除临时文件夹\nrm -rf \"${PROJECT_DIR}/build\"\nrm -rf \"${PROJECT_DIR}/Products\"\n\n# 打开项目的构建目录说明执行完了\nopen \"${PROJECT_DIR}\"";
+		};
+		464BBC4A643B0402DC1419AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuBan/Pods-HuBan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31173A2BABD3061A55B48A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuBan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4531BE461F8B438900EDDC38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4579357E1FB05860008E7952 /* HBTableViewController.m in Sources */,
+				459160101F94A44D0091C605 /* NSData+HuBan.m in Sources */,
+				451862201F8E54EA00FF4018 /* Reachability.m in Sources */,
+				45C4AAFB1F8C6CC2006802A2 /* UITextField+HuBan.m in Sources */,
+				4558F04D1F8B66C7001E00E9 /* NSURL+HuBan.m in Sources */,
+				4579356A1FAFFC5B008E7952 /* GCDQueue.m in Sources */,
+				45E695401F8EF45600C9F8AC /* UIApplication+HuBan.m in Sources */,
+				4558F0671F8B8FBC001E00E9 /* UIColor+HuBan.m in Sources */,
+				4558F04E1F8B66C7001E00E9 /* NSUserDefaults+HuBan.m in Sources */,
+				457935831FB05A05008E7952 /* UIViewController+HuBan.m in Sources */,
+				459160211F94B5A30091C605 /* HBWhitePickerController.m in Sources */,
+				457935681FAFFC5B008E7952 /* GCDGroup.m in Sources */,
+				45E695531F8F1A9000C9F8AC /* UINavigationItem+HuBan.m in Sources */,
+				4558F04F1F8B66C7001E00E9 /* UIBarButtonItem+HuBan.m in Sources */,
+				4558F0591F8B6E3D001E00E9 /* UINavigationBar+HuBan.m in Sources */,
+				45E1E4AF1F90D23400F05E6B /* NSMutableDictionary+HuBan.m in Sources */,
+				4591601D1F94B5960091C605 /* HBBlackPickerController.m in Sources */,
+				45C4AB051F8C7291006802A2 /* UIView+HuBan.m in Sources */,
+				455C8F441FA31567009D75B8 /* NSDateFormatter+HuBan.m in Sources */,
+				4558F0501F8B66C7001E00E9 /* HBBaseNavController.m in Sources */,
+				459CBF6C1F8DFCFC0022B3A0 /* NSString+HuBan.m in Sources */,
+				45C4AAFF1F8C716E006802A2 /* HBTouchView.m in Sources */,
+				4558F0511F8B66C7001E00E9 /* HBBaseTabBarController.m in Sources */,
+				4558F0521F8B66C7001E00E9 /* HBBaseViewController.m in Sources */,
+				4558F0531F8B66C7001E00E9 /* HBFixedViewController.m in Sources */,
+				45C4AB0B1F8C7529006802A2 /* UIImage+HuBan.m in Sources */,
+				45C4AB0F1F8C7537006802A2 /* UIButton+HuBan.m in Sources */,
+				4558F0541F8B66C7001E00E9 /* HBImagePickerController.m in Sources */,
+				4559938D1F8CD06C0095BD2D /* NSBundle+HuBan.m in Sources */,
+				455C8F3F1FA313AF009D75B8 /* HBFormatManager.m in Sources */,
+				45EB0E6F1F91A44B0047E396 /* HBFileManager.m in Sources */,
+				459CBF7A1F8E1BE90022B3A0 /* UIStoryboard+HuBan.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		455993751F8CBF760095BD2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4558F06F1F8BA546001E00E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4531BE4A1F8B438900EDDC38 /* HuBan */;
+			targetProxy = 4558F06E1F8BA546001E00E9 /* PBXContainerItemProxy */;
+		};
+		455993811F8CBFBE0095BD2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 455993781F8CBF760095BD2D /* Bundle */;
+			targetProxy = 455993801F8CBFBE0095BD2D /* PBXContainerItemProxy */;
+		};
+		455993841F8CC3D80095BD2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 455993781F8CBF760095BD2D /* Bundle */;
+			targetProxy = 455993831F8CC3D80095BD2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4531BE511F8B438900EDDC38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4531BE521F8B438900EDDC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4531BE541F8B438900EDDC38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1C5452C9A8B8F3F8F4D9D8 /* Pods-HuBan.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VTS323R2FC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = HuBan/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-fembed-bitcode",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.whohelp.HuBan;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		4531BE551F8B438900EDDC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43CECCC9908DEEB3B6D24D6 /* Pods-HuBan.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = VTS323R2FC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = HuBan/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-fembed-bitcode",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.whohelp.HuBan;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		4558F06B1F8BA3FE001E00E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RLWWLG8QM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		4558F06C1F8BA3FE001E00E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RLWWLG8QM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		4559937D1F8CBF760095BD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4RLWWLG8QM;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.whohelp.Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4559937E1F8CBF760095BD2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4RLWWLG8QM;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.whohelp.Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4531BE451F8B438900EDDC38 /* Build configuration list for PBXProject "HuBan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4531BE511F8B438900EDDC38 /* Debug */,
+				4531BE521F8B438900EDDC38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4531BE531F8B438900EDDC38 /* Build configuration list for PBXNativeTarget "HuBan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4531BE541F8B438900EDDC38 /* Debug */,
+				4531BE551F8B438900EDDC38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4558F06A1F8BA3FE001E00E9 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4558F06B1F8BA3FE001E00E9 /* Debug */,
+				4558F06C1F8BA3FE001E00E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4559937C1F8CBF760095BD2D /* Build configuration list for PBXNativeTarget "Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4559937D1F8CBF760095BD2D /* Debug */,
+				4559937E1F8CBF760095BD2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4531BE421F8B438900EDDC38 /* Project object */;
+}
